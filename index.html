@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tahó tihi</title>
+
+    <style>
+        body {
+            background: url(https://www.calendarclub.ca/cdn/shop/files/Poop_Emoji_Vinyl_Sticker.jpg?v=1769455209);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            margin: auto;
+        }
+
+        /* Fő doboz – csak a háttér átlátszó */
+        .fődoboz {
+            background-color: rgba(255, 150, 3, 0.6);
+            margin: 25px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Kis dobozok – szintén rgba */
+        .kisdoboz {
+            width: 100%;
+            height: 60px;
+            margin-bottom: 20px;
+            background-color: rgba(125, 52, 0, 0.6);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .elsődoboz {
+            width: 50%;
+        }
+
+        /* H1 villogás */
+        h1 {
+            color: white;
+            animation: blink 1s linear infinite;
+            margin: 0;
+            color: red;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        button {
+           background-color: brown;
+          margin: auto;
+          margin-bottom: 5px blue solid;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="fődoboz">
+        <div class="kisdoboz elsődoboz"></div>
+        <div class="kisdoboz">
+            <h1>Szar vagy</h1>
+        </div>
+        <div class="kisdoboz">
+            <h1>Szar Tihi,Szar Tihi,Szar Tihi,Szar Tihi,Szar Tihi</h1>
+        </div>
+        <div class="kisdoboz">
+             <h1>Szar Tihi,Szar Tihi,Szar Tihi,Szar Tihi,Szar Tihi</h1>
+        </div>
+        <div class="kisdoboz">
+             <h1>Szar Tihi,Szar Tihi,Szar Tihi,Szar Tihi,Szar Tihi</h1>
+        </div>
+    </div>
+          <button onclick="alert('TE MAJOM!')">Kattints ide</button>
+</body>
+</html>
